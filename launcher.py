@@ -20,7 +20,7 @@ def getFPS():
     text = font.render(f"FPS: {int(clock.get_fps())}", True, (0, 0, 0))
     screen.blit(text, (50, 50))
 
-def loading():
+def load():
     global background
     background = pygame.transform.scale(pygame.image.load("assets/Launcher/background.png"), (1280, 720))
 
@@ -36,7 +36,7 @@ def main():
 def launchmc():
     os.system(f"python3 -u {os.getcwd()}/mcversions/mc{chosenversion}")
 
-loading()
+load()
 
 #Main loop
 running = True
