@@ -33,6 +33,9 @@ def main():
     text = font.render("26.3", True, (255, 255, 255))
     screen.blit(text, (WINDOW_HEIGTH / 2 - 125, WINDOW_WIDTH / 2 - 215))
 
+def launchmc():
+    os.system(f"python3 -u {os.getcwd()}/mcversions/mc{chosenversion}")
+
 loading()
 
 #Main loop
