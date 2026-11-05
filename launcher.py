@@ -27,9 +27,11 @@ def loading():
 def main():
     pygame.draw.rect(screen, (255, 255, 255), (WINDOW_HEIGTH / 2 - 250, WINDOW_WIDTH / 2 - 250, 500 , 500), border_radius=35)
     pygame.draw.rect(screen, (43, 151, 251), (WINDOW_HEIGTH / 2 - 200, WINDOW_WIDTH / 2 + 180, 400 , 50), border_radius=35)
-    pygame.draw.rect(screen, (125, 133, 130), (WINDOW_HEIGTH / 2 - 200, WINDOW_WIDTH / 2 - 180, 400 , 50), border_radius=20)
+    pygame.draw.rect(screen, (125, 133, 130), (WINDOW_HEIGTH / 2 - 200, WINDOW_WIDTH / 2 - 225, 200 , 50), border_radius=20)
     text = font.render(f"Launch Minecraft {chosenversion}", True, (255, 255, 255))
     screen.blit(text, (540 - (18 + 2 * len(chosenversion)), 555))
+    text = font.render("26.3", True, (255, 255, 255))
+    screen.blit(text, (WINDOW_HEIGTH / 2 - 125, WINDOW_WIDTH / 2 - 215))
 
 loading()
 
