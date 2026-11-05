@@ -1,0 +1,1 @@
+    slidebar = pygame.draw.rect(screen, (255, 255, 255), (WINDOW_WIDTH / 2 - 500, WINDOW_HEIGTH / 2 - 250, 1000 , 500), border_radius=35)
