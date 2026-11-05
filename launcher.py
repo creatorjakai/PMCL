@@ -22,7 +22,9 @@ def getFPS():
 
 def load():
     global background
+    loading = pygame.transform.scale(pygame.image.load("assets/Launcher/loading.png"), (1280, 720))
     background = pygame.transform.scale(pygame.image.load("assets/Launcher/background.png"), (1280, 720))
+    screen.blit(loading)
 
 def main():
     pygame.draw.rect(screen, (255, 255, 255), (WINDOW_HEIGTH / 2 - 250, WINDOW_WIDTH / 2 - 250, 500 , 500), border_radius=35)
